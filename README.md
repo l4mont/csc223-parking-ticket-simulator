@@ -27,5 +27,5 @@ The current test suite contains 26 tests covering validation, collaboration, tic
 
 Student: Emory Bruington. IDE: Visual Studio. Open the folder as a Python project, select a Python interpreter, and set `main.py` as the startup file. Run the test command above from the project root.
 
-The Word report is maintained separately for submission.
+The current report is included as [Parking_Ticket_Simulator_Report.pdf](Parking_Ticket_Simulator_Report.pdf). Submit this same PDF separately with the repository URL.
 
