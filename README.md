@@ -10,7 +10,6 @@ CSC 223 project that simulates a police officer inspecting a parked car and park
 - `police_officer.py` — inspection and ticket creation
 - `main.py` — demonstration program
 - `tests/` — automated `unittest` tests
-- `Parking_Ticket_Simulator_Report.docx` — project report
 
 ## Run the Demonstration
 
@@ -24,5 +23,9 @@ python main.py
 python -m unittest discover -s tests -v
 ```
 
-The current test suite contains 19 tests covering validation, collaboration, ticket creation, report content, and fine boundaries.
+The current test suite contains 26 tests covering validation, collaboration, ticket creation, report content, and fine boundaries. Tested with Python 3.12.14. No third-party packages are needed.
+
+Student: Emory Bruington. IDE: Visual Studio. Open the folder as a Python project, select a Python interpreter, and set `main.py` as the startup file. Run the test command above from the project root.
+
+The Word report is maintained separately for submission.
 
