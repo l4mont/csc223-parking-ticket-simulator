@@ -1,6 +1,5 @@
 """Define the ParkingTicket class for the parking-ticket simulator."""
 
-from math import ceil
 
 
 class ParkingTicket:
@@ -67,7 +66,8 @@ class ParkingTicket:
     @property
     def fine(self):
         """Return the fine using the required partial-hour rounding rules."""
-        additional_hours = ceil(self.illegal_minutes / 60) - 1
+        # Integer division counts each additional full or partial hour exactly.
+        additional_hours = (self.illegal_minutes - 1) // 60
         return 25 + (additional_hours * 10)
 
     def get_report(self):
