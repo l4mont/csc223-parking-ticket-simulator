@@ -1,6 +1,8 @@
 """Define the PoliceOfficer class for the parking-ticket simulator."""
 
 from parking_ticket import ParkingTicket
+from parked_car import ParkedCar
+from parking_meter import ParkingMeter
 
 
 class PoliceOfficer:
@@ -47,7 +49,13 @@ class PoliceOfficer:
             meter: ParkingMeter object supplied through dependency injection.
         Returns:
             ParkingTicket when parked time exceeds purchased time; otherwise None.
+        Raises:
+            TypeError: If car or meter has the wrong type.
         """
+        if not isinstance(car, ParkedCar):
+            raise TypeError("car must be a ParkedCar")
+        if not isinstance(meter, ParkingMeter):
+            raise TypeError("meter must be a ParkingMeter")
         illegal_minutes = car.minutes_parked - meter.minutes_purchased
         if illegal_minutes <= 0:
             return None
