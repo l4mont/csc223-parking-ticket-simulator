@@ -4,6 +4,8 @@ __pycache__/
 venv/
 .idea/
 .vscode/
+.vs/
+*.suo
 *.pyo
 *.pyd
 build/
